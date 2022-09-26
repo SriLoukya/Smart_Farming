@@ -17,9 +17,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
-import background from "../img/background.jpeg";
-import bg from "../img/background.jpg";
-import farming from "../img/farming.png"
+
 import Navbar from "./Navbar";
 import ReactLoading from "react-loading";
 import { makeStyles } from "@mui/styles";
@@ -480,9 +478,6 @@ const UsersList = (props) => {
             </div>
         );
     };
-    const backStyle = { backgroundImage: `url(${background})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', padding: "50px" };
-    const backStyle2 = { backgroundImage: `url(${farming})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' };
-    const backStyle3 = { backgroundColor: "black", color: "aqua",backgroundSize: 'cover',height:'100vh' };
     const [isHovering3, setIsHovering3] = useState(false);
     
     const handleMouseEnter3 = () => {

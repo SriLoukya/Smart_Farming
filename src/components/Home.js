@@ -260,8 +260,6 @@ function Home() {
         );
     };
 
-    // const backStyle = { backgroundImage: `url(${farming})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', padding: "50px", width: "null%", height: "null%" };
-    // const backStyle2 = { backgroundImage: `url(${bg})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', padding: "20px", width: "100%", height: "100%" };
     const backStyle2 = { backgroundColor: 'black', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', padding: "20px" };
     const backStyle = { backgroundColor: 'black', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' };
 

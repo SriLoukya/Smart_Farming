@@ -1,36 +1,11 @@
 import React, { useState, Component, useEffect } from 'react';
 import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
-import axios from 'axios';
 import Grid from '@mui/material/Grid';
-import { tableCellClasses } from '@mui/material/TableCell';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Plotly from 'plotly.js-dist';
-import Paper from '@mui/material/Paper';
-import { TableContainer } from '@mui/material';
-import { TablePagination } from '@mui/material';
-import ReactLoading from "react-loading";
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import moment from 'moment';
-import { bgcolor, padding } from '@mui/system';
-// import background from "./img/background.jpeg";
-// import bg from "./img/background.jpg";
-import background from "../img/background.jpeg";
-import bg from "../img/background.jpg";
-import farming from "../img/farming.png"
-// import ParticlesBg from 'particles-bg'
-// import images from "../img/images.jpeg";
 import WebFont from 'webfontloader';
 import TextField from '@mui/material/TextField';
 import { makeStyles } from '@mui/styles';
+import { useNavigate } from "react-router-dom";
+
 const useStyles = makeStyles({
     root: {
       "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
@@ -63,6 +38,7 @@ const useStyles = makeStyles({
     }
   });
 function Login() {
+    const navigate = useNavigate();
     const classes = useStyles();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -83,13 +59,14 @@ function Login() {
     const onSubmit = (event) => {
         event.preventDefault();
         if (email === "1871357" && password === "0B39S2G0VPIURNHC") {
-            window.location.href = "/home";
+            // window.location.href = "/home";
+            navigate("/home");
         }
         else {
             alert("Invalid Credentials");
             // setEmail("");
             setPassword("");
-
+            
             // window.location.reload();
 
         }
